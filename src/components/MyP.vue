@@ -34,7 +34,8 @@ export default{
 h1{
     background-color: rgb(97, 51, 139);
     border: 3px;
-    border-radius: 30px;
+    border-radius: 5px;
+    text-align: center;
     border-right-width: 10px;
 }
 p{
@@ -45,5 +46,7 @@ p{
 button{
     background-color: green;
     border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
 }
 </style>

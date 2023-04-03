@@ -43,7 +43,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, 'Times New Roman', Times, serif, sans-serif;
   -webkit-font-smoothing: antialiased;

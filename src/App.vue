@@ -1,44 +1,26 @@
 <template>
   <div>
-    <MyP :Person="Person" />
-    <MyPerson @newPerson="updatePerson"/>
+    <navbar></navbar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  export default{
-    data(){
-        return{
-            Person:{
-              Name: "",
-              Surname: "",
-              Age: "",
-              Country: "",
-              Phone: ""
-            } 
-        }
-    },
-    methods: {
-      updatePerson(eventData){
-        this.Person = eventData
-      }
-    }
+export default {
 }
 </script>
 
 <style>
-#app{
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: black;
 }
-#MyP{
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #09a01d;
-  background-color: #09a01d;
+div {
+  margin: 10px;
+  border: 2px;
+  border-color: blue;
+  text-align: left;
 }
 </style>
